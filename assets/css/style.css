@@ -223,19 +223,19 @@ main {
 /* hero style end */
 
 .section-title {
-  /*flex: 15%;*/
+  flex: 15%;
   padding-right: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 22px;
-  text-align: center;
-  /*border-right: 3px solid black;*/
+  /*text-align: center;*/
+  border-right: 2px solid black;
 }
 
 .section-title h2 {
   margin-top: 50px;
   height: 100%;
-  float: left;
-  border-right: 2px solid red;
+  text-align: right;
+  /*float: left;*/
 }
 
 .section-text {
@@ -245,8 +245,8 @@ main {
   padding-left: 15px;
 }
 
-.container {
-  width: 90%;
+.containers {
+  width: 50%;
   max-width: 1080px;
   margin: 0 auto;
   padding: 50px 0 100px 0;
@@ -333,37 +333,13 @@ main {
 /* GRID CONTAINER SECTION END */
 
 /* TESTING CONTACT STYLE */
-#contact ul {
-  flex: 85%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; 
-}
-
-#contact ul li a {
-  padding: 5px 10px;
-  color: #333333;
-  border-bottom: 3px solid #909090;
-  transition: all .1s ease-in;
-}
-
-#contact li:hover a {
-  color: #232323;
-  background: #fefefe;
-  border: none;
-}
-
-.contact-alignment {
-  align-content: center;
-}
 
 /* CONTACT NAVIGATION STYLE TEST */
 .navigation {
+  margin: 9px 60px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  
   list-style: none;
   margin: 0; 
   background: deepskyblue;
