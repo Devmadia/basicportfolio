@@ -209,7 +209,7 @@ footer a {
 /* work section end */
 
 /* PROJ CONTAINER SECTION START */
-.proj-container {
+/* .proj-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr) 1.1fr 0.9fr 1fr;
   grid-template-rows: repeat(5, 1fr);
@@ -234,9 +234,9 @@ footer a {
 .Proj8 { grid-area: Proj8; }
 
 .Proj8 { grid-area: Proj8; }
-/* GRID CONTAINER SECTION END */
+ GRID CONTAINER SECTION END */
 
-@media all and (-ms-high-contrast:none) {
+/* @media all and (-ms-high-contrast:none) {
   .grid-container {
     display: -ms-grid;
     -ms-grid-columns: repeat(4, 1fr) 1.1fr 0.9fr 1fr;
@@ -306,4 +306,4 @@ footer a {
     -ms-grid-column-span: 2;
   }
 
-}
+} */
