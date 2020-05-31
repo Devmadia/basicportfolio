@@ -206,18 +206,19 @@ footer a {
 /* hero style end */
 
 .section-title {
-  flex: 15%;
+  /*flex: 15%;*/
   padding-right: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 22px;
   text-align: center;
+  border-right: 3px solid black;
 }
 
 .section-title h2 {
+  float: right;
   margin-top: 50px;
   height: 100%;
   float: left;
-  /*writing-mode: vertical-rl;*/
 }
 
 .section-text {
