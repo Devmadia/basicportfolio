@@ -208,13 +208,13 @@ main {
 /* Hero-cta style end*/
 
 /* Hero-form Style Start */
-.hero-form {
+.hero-box {
   border: solid 3px #1a2104;
   background-color: rgb(255, 255, 255); opacity: 80%;
   border-radius: 15px;
   padding: 20px;
   color: #3e1818;
-  width: 40%;
+  width: 15%;
   margin: 330px 40px 35px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
