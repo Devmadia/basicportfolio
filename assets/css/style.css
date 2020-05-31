@@ -1,15 +1,45 @@
+/* BOX HOVER ANIMATION */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+.box {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  position: relative;
+}
+.box::before {
+  position: absolute;
+  background-color: orange;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  transition: opacity 0.3s ease;
+}
+.box:hover::before {
+  transition: opacity 0.3s ease;
+  opacity: 0.5;
+}
+/* BOX HOVER ANIMATION */
 
 /* body style start */
 body {
   color: #27671a;
 }
 /* body style end */
+
+section {
+  padding: 30px 30px;
+  }
+
 
 /* header style start */
 header {
@@ -57,7 +87,7 @@ header h1 {
   text-shadow: 0 0 10px rgba(85, 91, 110, 0.5);
 }
 
-/* apply lightseagreen color to header hr anchors and removes link decorations */
+/* apply color to header hr anchors and removes link decorations */
 header h1 a {
   font-weight: bold;
   font-size: 36px;
@@ -176,12 +206,14 @@ footer a {
 /* hero style end */
 
 .section-title {
+  flex: 15%;
+  padding-right: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 22px;
   text-align: center;
 }
 
-.section-title h3 {
+.section-title h2 {
   margin-top: 50px;
   height: 100%;
   float: left;
@@ -189,12 +221,72 @@ footer a {
 }
 
 .section-text {
-  width: 75%;
+  /*width: 75%;*/
   display: inline-block;
   margin-left: 300px;
 }
 
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.border-left {
+  border-left: 3px solid var(--primary-color);
+}
+
 /* work section start */ 
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 0 0 20px rgba(85, 91, 110, 0.4);
+}
+
+.project-image {
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  padding: 15px;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+/* p# introduce project cover images within container grid */
+.p1 {
+  background-image: url("../images/RunBuddy.png");
+}
+
+.p2 {
+  background-image: url("../images/Horiseon.png");
+}
+
+.p3 {
+  background-image: url("../images/p3.jpg");
+}
+
+.p4 {
+  background-image: url("../images/p4.jpg");
+}
+
+.p5 {
+  background-image: url("../images/p5.jpg");
+}
+
+.p6 {
+  background-image: url("../images/p6.jpg");
+}
+/* p# style ends */
+
 .portfolio {
 
 }
@@ -209,101 +301,23 @@ footer a {
 /* work section end */
 
 /* PROJ CONTAINER SECTION START */
-/* .proj-container {
+.container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr) 1.1fr 0.9fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  margin: auto;
+  width: 75%;
+  padding: 15px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
   gap: 7px 8px;
-  grid-template-areas: "Proj1 Proj1 Proj2 Proj2 Proj2 Proj3 Proj3" "Proj1 Proj1 Proj2 Proj2 Proj2 Proj3 Proj3" "Proj5 Proj5 Proj4 Proj4 Proj6 Proj6 ." "Proj8 Proj8 Proj4 Proj4 . Proj7 Proj7" "Proj8 Proj8 Proj4 Proj4 Proj8 Proj8 .";
-}
-
-.Proj1 { grid-area: Proj1; }
-
-.Proj2 { grid-area: Proj2; }
-
-.Proj3 { grid-area: Proj3; }
-
-.Proj4 { grid-area: Proj4; }
-
-.Proj5 { grid-area: Proj5; }
-
-.Proj6 { grid-area: Proj6; }
-
-.Proj7 { grid-area: Proj7; }
-
-.Proj8 { grid-area: Proj8; }
-
-.Proj8 { grid-area: Proj8; }
- GRID CONTAINER SECTION END */
-
-/* @media all and (-ms-high-contrast:none) {
-  .grid-container {
-    display: -ms-grid;
-    -ms-grid-columns: repeat(4, 1fr) 1.1fr 0.9fr 1fr;
-    -ms-grid-rows: repeat(5, 1fr);
+  /*grid-auto-flow: dense;*/
   }
+  
+  .proj1 { grid-area: 1 / 1 / 4 / 4; }
+  .proj2 { grid-area: 3 / 1 / 5 / 4; }
+  .proj3 { grid-area: 1 / 4 / 3 / 7; }
+  .proj4 { grid-area: 5 / 2 / 7 / 4; }
+  .proj5 { grid-area: 5 / 4 / 7 / 6; }
+  .proj6 { grid-area: 3 / 4 / 5 / 7; }
+/* GRID CONTAINER SECTION END */
 
-  .Proj1 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-
-  .Proj2 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
-  }
-
-  .Proj3 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 2;
-  }
-
-  .Proj4 {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-  }
-
-  .Proj5 {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-
-  .Proj6 {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
-  }
-
-  .Proj7 {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 6;
-    -ms-grid-column-span: 2;
-  }
-
-  .Proj8 {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-  }
-
-  .Proj8 {
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
-  }
-
-} */
