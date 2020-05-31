@@ -221,13 +221,14 @@ footer a {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 22px;
   text-align: center;
-  border-right: 3px solid black;
+  /*border-right: 3px solid black;*/
 }
 
 .section-title h2 {
   margin-top: 50px;
   height: 100%;
   float: left;
+  border-right: 2px solid red;
 }
 
 .section-text {
@@ -366,7 +367,6 @@ footer a {
 /* CONTACT NAV STYLE TEST END */
 
 /* MEDIA QUERIES */
-
 /* SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 1060px) {
 
@@ -381,5 +381,28 @@ footer a {
     margin-bottom: 50px;
   }
 }
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
 
 /* TESTING CONTACT STYLE END */
