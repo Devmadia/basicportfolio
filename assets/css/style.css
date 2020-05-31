@@ -60,7 +60,7 @@ header {
   background-attachment: fixed;
   background-position: 80%;
   padding: 20px 35px;
-  background-color: var(--tertiary-color);
+  background-color: lightgrey;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -85,14 +85,14 @@ header span {
 /* header anchor style starts */
 header a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: whitesmoke;
 }
 /* header anchor style ends */
 
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  color: var(--white);
+  color: red;
   margin: 15px 70px;
   text-shadow: 0 0 10px rgba(85, 91, 110, 0.5);
 }
@@ -150,6 +150,7 @@ footer {
 
 /* apply style to the footer h2 */
 footer h2 {
+  font-family: 'Times New Roman', Times, serif;
   color: #d4b64a;
   font-size: 30px;
   margin: 0;
@@ -165,6 +166,12 @@ footer div {
 footer a {
   color: #d4b64a;
 }
+
+/* Main Style Start */
+main {
+  background: linear-gradient(to bottom, white, gray);
+}
+/* Main Style End */
 
 /* hero style start */
 .hero {
@@ -247,11 +254,15 @@ footer a {
 
 .flex-row {
   display: flex;
+  /*position: relative;
+  margin-bottom: inherit;*/
+  align-content: center;
+  align-items: flex-end;
 }
 
-.border-left {
-  border-left: 3px solid var(--primary-color);
-}
+/*.border-left {
+  border-left: 3px solid blue;
+}*/
 
 /* work section start */ 
 .project {
@@ -310,7 +321,7 @@ footer a {
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 0px;
   gap: 7px 8px;
-  /*grid-auto-flow: dense;*/
+  grid-auto-flow: dense;
   }
   
   .proj1 { grid-area: 1 / 1 / 4 / 4; }
@@ -341,6 +352,10 @@ footer a {
   color: #232323;
   background: #fefefe;
   border: none;
+}
+
+.contact-alignment {
+  align-content: center;
 }
 
 /* CONTACT NAVIGATION STYLE TEST */
