@@ -36,9 +36,19 @@ body {
 }
 /* body style end */
 
+a {
+  font-size: 22px;
+  text-decoration: none;
+  color: green;
+}
+
+ul {
+  list-style: none;
+}
+
 section {
   padding: 30px 30px;
-  }
+}
 
 
 /* header style start */
@@ -130,7 +140,7 @@ header nav ul li a:hover {
 
 /* apply style to the footer */
 footer {
-  background: #061004;
+  background: linear-gradient(to bottom, white, #162f16);
   width: 100%;
   padding: 40px 35px;
   display: flex;
@@ -215,7 +225,6 @@ footer a {
 }
 
 .section-title h2 {
-  float: right;
   margin-top: 50px;
   height: 100%;
   float: left;
@@ -223,8 +232,9 @@ footer a {
 
 .section-text {
   /*width: 75%;*/
-  display: inline-block;
-  margin-left: 300px;
+  /*display: inline-block;*/
+  flex: 75%;
+  padding-left: 15px;
 }
 
 .container {
@@ -322,3 +332,43 @@ footer a {
   .proj6 { grid-area: 3 / 4 / 5 / 7; }
 /* GRID CONTAINER SECTION END */
 
+/* TESTING CONTACT STYLE */
+#contact ul {
+  flex: 85%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+#contact ul li a {
+  padding: 5px 10px;
+  color: #333333;
+  border-bottom: 3px solid #909090;
+  transition: all .1s ease-in;
+}
+
+#contact li:hover a {
+  color: #232323;
+  background: #fefefe;
+  border: none;
+}
+
+/* MEDIA QUERIES */
+
+/* SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1060px) {
+
+  #contact ul {  
+    display: flex;
+    justify-content: center; 
+  }
+
+  #contact ul li {
+    flex: 1 25%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+/* TESTING CONTACT STYLE END */
