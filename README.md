@@ -7,8 +7,15 @@ Showcasing Agatha's Developer Skills
 * HTML
 * CSS
 
+### Major Updates Deployed: 
+- CSS Grid transitions
+- navigation bar fixed
+- consolidation and reorganization of CSS elements
+- consistent comments included for increased readability
+
 ## Website
 https://devmadia.github.io/
+[Screenshot of deployed Agatha's website](https://raw.githubusercontent.com/Devmadia/Devmadia.github.io/master/assets/images/portfolio.png)
 
 ## Contribution
 Made with ❤️ by Devmadia
