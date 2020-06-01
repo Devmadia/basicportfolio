@@ -1,49 +1,24 @@
-/* BOX HOVER ANIMATION */
+:root {
+  --primary-color: #131563;
+  --secondary-color: #FFFFFF;
+  --tertiary-color: #d3d3d3;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-.box {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  position: relative;
-}
-.box::before {
-  position: absolute;
-  background-color: orange;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  content: "";
-  transition: opacity 0.3s ease;
-}
-.box:hover::before {
-  transition: opacity 0.3s ease;
-  opacity: 0.5;
-}
-/* BOX HOVER ANIMATION */
-
-/*#About-Me {
-  vertical-align: top;
-}*/
-
 /* body style start */
 body {
-  color: #131563;
+  color: var(--primary-color);
 }
 /* body style end */
 
 a {
   font-size: 22px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: var(--secondary-color);
 }
 
 ul {
@@ -64,7 +39,7 @@ header {
   background-attachment: fixed;
   background-position: 80%;
   padding: 20px 35px;
-  background-color: lightgrey;
+  background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -82,7 +57,7 @@ header span {
   color: lightpink;
   border-radius: 70%;
   text-shadow: none;
-  box-shadow: 0 0 70px rgba(182, 44, 80, 1);
+  box-shadow: 0 0 70px #b62c50;
 }
 /* header span style ends */
 
@@ -136,7 +111,7 @@ header nav ul li a {
 
 /* apply style to header nav list anchor button on hover */
 header nav ul li a:hover {
-  background: #fff;
+  background: var(--secondary-color);
   color: rgb(236, 83, 108);
   border-radius: 15px;
   text-shadow: 1px 1px 2px pink;;
@@ -173,7 +148,7 @@ footer a {
 
 /* Main Style Start */
 main {
-  background: linear-gradient(to bottom, white, #87bcff91);
+  background: linear-gradient(to bottom, #FFFFFF, #87bcff91);
 }
 /* Main Style End */
 
@@ -196,7 +171,7 @@ main {
   width: 35%;
   text-align: right;
   margin: 3.5%;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 18px;
   line-height: 1.2;
   visibility: hidden;
@@ -214,7 +189,7 @@ main {
 /* Hero-form Style Start */
 .hero-box {
   border: solid 2px #456dbf;
-  background-color: rgb(225, 250, 254); 
+  background-color: #e1fafe; 
   opacity: 80%;
   text-align: center;
   border-radius: 15px;
