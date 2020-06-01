@@ -30,6 +30,10 @@
 }
 /* BOX HOVER ANIMATION */
 
+#About-Me {
+  vertical-align: top;
+}
+
 /* body style start */
 body {
   color: #27671a;
@@ -232,7 +236,6 @@ main {
 }
 
 .section-title h2 {
-  margin-top: 50px;
   height: 100%;
   text-align: right;
   /*float: left;*/
@@ -257,7 +260,7 @@ main {
   /*position: relative;
   margin-bottom: inherit;*/
   align-content: center;
-  align-items: flex-end;
+  /*align-items: flex-end;*/
 }
 
 /*.border-left {
