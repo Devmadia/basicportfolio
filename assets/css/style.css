@@ -30,9 +30,9 @@
 }
 /* BOX HOVER ANIMATION */
 
-#About-Me {
+/*#About-Me {
   vertical-align: top;
-}
+}*/
 
 /* body style start */
 body {
@@ -155,7 +155,7 @@ footer {
 /* apply style to the footer h2 */
 footer h2 {
   font-family: 'Times New Roman', Times, serif;
-  color: #d4b64a;
+  color: #001c50;
   font-size: 30px;
   margin: 0;
 }
@@ -168,7 +168,7 @@ footer div {
 
 /* apply style to the footer a */
 footer a {
-  color: #d4b64a;
+  color: #001c50;
 }
 
 /* Main Style Start */
@@ -264,10 +264,6 @@ main {
   align-content: center;
   /*align-items: flex-end;*/
 }
-
-/*.border-left {
-  border-left: 3px solid blue;
-}*/
 
 /* work section start */ 
 .project {
