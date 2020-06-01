@@ -1,7 +1,7 @@
 # Devmadia Portfolio
 
 ## Purpose
-Showcasing Devmadia's Developer Skills
+Showcasing Agatha's Developer Skills
 
 ## Built With
 * HTML
