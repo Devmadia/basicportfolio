@@ -36,14 +36,14 @@
 
 /* body style start */
 body {
-  color: #27671a;
+  color: #131563;
 }
 /* body style end */
 
 a {
   font-size: 22px;
   text-decoration: none;
-  color: green;
+  color: rgb(94, 23, 94);
 }
 
 ul {
@@ -96,9 +96,9 @@ header a {
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  color: red;
+  color: rgb(225, 250, 254);
   margin: 15px 70px;
-  text-shadow: 0 0 10px rgba(85, 91, 110, 0.5);
+  text-shadow: 11px 11px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* apply color to header hr anchors and removes link decorations */
@@ -131,20 +131,20 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 11px 11px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* apply style to header nav list anchor button on hover */
 header nav ul li a:hover {
   background: #fff;
-  color: #eeeeee;
+  color: rgb(236, 83, 108);
   border-radius: 15px;
-  text-shadow: none;
+  text-shadow: 1px 1px 2px pink;;
 }
 
 /* apply style to the footer */
 footer {
-  background: linear-gradient(to bottom, white, #162f16);
+  background: linear-gradient(to bottom, #87bcff91, #021f52);
   width: 100%;
   padding: 40px 35px;
   display: flex;
@@ -173,13 +173,13 @@ footer a {
 
 /* Main Style Start */
 main {
-  background: linear-gradient(to bottom, white, gray);
+  background: linear-gradient(to bottom, white, #87bcff91);
 }
 /* Main Style End */
 
 /* hero style start */
 .hero {
-  height: 450px;
+  height: 250px;
   background-image: url("../images/portfoliobg.jpg");
   background-size: cover;
   background-position: center;
@@ -213,13 +213,15 @@ main {
 
 /* Hero-form Style Start */
 .hero-box {
-  border: solid 3px #1a2104;
-  background-color: rgb(255, 255, 255); opacity: 80%;
+  border: solid 2px #456dbf;
+  background-color: rgb(225, 250, 254); 
+  opacity: 80%;
+  text-align: center;
   border-radius: 15px;
   padding: 20px;
-  color: #3e1818;
+  color: #042663;
   width: 15%;
-  margin: 330px 40px 35px auto;
+  margin: 125px 0 0 auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 /* Hero-form Style End */
@@ -342,10 +344,10 @@ main {
   margin: 9px 60px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: center;
   list-style: none;
   margin: 0; 
-  background: deepskyblue;
+  background: #3f6da8;
 }
 
 .navigation a {
