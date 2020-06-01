@@ -418,7 +418,7 @@ main {
   }
 
   .container {
-    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 0.5fr));
   }
 
   .hero-box {
@@ -483,12 +483,6 @@ main {
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(40px, 1fr))
   }
-
-  .footer h2 {
-    font-size: x-large;
-  }
 }
-
-
 
 /* TESTING CONTACT STYLE END */
