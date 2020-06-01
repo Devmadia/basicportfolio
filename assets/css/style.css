@@ -152,6 +152,11 @@ main {
 }
 /* Main Style End */
 
+.resume {
+  width: 100%;
+  max-width: 1200px;
+}
+
 /* hero style start */
 .hero {
   height: 250px;
