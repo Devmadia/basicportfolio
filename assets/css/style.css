@@ -380,6 +380,10 @@ main {
     font-size: 20px;
   }
 
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
+  }
+
   .hero-box {
     width: 100%;
   }
@@ -398,6 +402,9 @@ main {
   .flex-row {
     display: inline;
   }
+  .navigation {
+    margin-right: 15px;
+  }
 }
 @media all and (max-width: 800px) {
   .navigation {
@@ -409,6 +416,7 @@ main {
   .navigation {
     flex-flow: column wrap;
     padding: 0;
+    margin-right: 15px;
   }
   .navigation a { 
     text-align: center; 
@@ -423,9 +431,27 @@ main {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  header h1 {
+    margin: none;
+    font-size: xx-large;
+  }
+  
   .section-title {
     width: 95%;
+    border-right: none;
+  }
+
+  .container {
+    padding: none;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr))
+  }
+
+  .footer h2 {
+    font-size: x-large;
   }
 }
+
+
 
 /* TESTING CONTACT STYLE END */
