@@ -16,7 +16,7 @@ Showcasing Agatha's Developer Skills
 ## Website
 https://devmadia.github.io/basicportfolio/
 
-![Screenshot of deployed Agatha's website](https://devmadia.github.io/assets/images/portfolio.png)
+![Screenshot of deployed Agatha's website](https://devmadia.github.io/basicportfolio/assets/images/portfolio.png)
 
 ## Contribution
 Made with ❤️ by Devmadia
