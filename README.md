@@ -14,7 +14,7 @@ Showcasing Agatha's Developer Skills
 - consistent comments included for increased readability
 
 ## Website
-https://devmadia.github.io/
+https://devmadia.github.io/basicportfolio/
 
 ![Screenshot of deployed Agatha's website](https://devmadia.github.io/assets/images/portfolio.png)
 
